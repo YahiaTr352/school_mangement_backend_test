@@ -116,4 +116,9 @@ router.delete("/Subject/:id", deleteSubject)
 router.delete("/Subjects/:id", deleteSubjects)
 router.delete("/SubjectsClass/:id", deleteSubjectsByClass)
 
+// Test API
+router.get('/test-ok', (req, res) => {
+    res.send('ok');
+});
+
 module.exports = router;
